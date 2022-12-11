@@ -34,13 +34,13 @@ Tab:AddTextbox({
 })
 task.wait(2)
 	local MainOrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-				local Window2 = MainOrionLib:MakeWindow({Name = "Private Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-				local Tab2 = Window:MakeTab({
+				local Window = MainOrionLib:MakeWindow({Name = "Private Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+				local Tab = Window:MakeTab({
 	Name = "Main (OP)",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab2:AddButton({
+Tab:AddButton({
 	Name = "Kill youreself (works in all games and games with reset button off)",
 	Callback = function()
       		game.Players.LocalPlayer.Humanoid.Health = 0
