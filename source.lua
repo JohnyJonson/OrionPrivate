@@ -17,7 +17,7 @@ local Tab = KeyWindow:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-_G.Key = "token-key?php.index=private"
+_G.Key = "privateToken"
 _G.KeyInput = "string"
 Tab:AddTextbox({
 	Name = "Key",
@@ -35,13 +35,13 @@ Tab:AddTextbox({
 task.wait(2)
 OrionLib:Destroy()
 	local MainOrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-				local Window = OrionLib:MakeWindow({Name = "Private Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-				local Tab = Window:MakeTab({
+				local Window2 = OrionLib:MakeWindow({Name = "Private Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+				local Tab2 = Window:MakeTab({
 	Name = "Main (OP)",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-Tab:AddButton({
+Tab2:AddButton({
 	Name = "Kill youreself (works in all games and games with reset button off)",
 	Callback = function()
       		game.Players.LocalPlayer.Humanoid.Health = 0
