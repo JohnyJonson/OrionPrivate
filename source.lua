@@ -49,7 +49,9 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Infinite health",
 	Callback = function()
+							while wait(0.5) do 
       		game.Players.LocalPlayer.Character.Humanoid.Health = 10000000
+								end
   	end    
 })
 --[[
